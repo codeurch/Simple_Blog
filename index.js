@@ -1,2 +1,1 @@
-let heading = document.getElementById('topic');
-heading.innerHTML = 'Welcome to our blog!';
+document.getElementById('footword').innerHTML = 'Welcome to our blog!';
