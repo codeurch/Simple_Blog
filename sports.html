@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Page</title>
+</head>
+<body>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        .header{
+            border-bottom: 1px solid red;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .header h1{
+            margin: 0px;
+        }
+
+        #newspanel{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            width: 100%;
+            display: none;
+
+        }
+        
+        .container{
+            border: 0px solid gray;
+            box-shadow: 2px 2px black;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+        .container img{
+           width: 20%;
+           border-radius: 4px;
+           margin-bottom: 0px;
+        }
+
+        .container h3{
+            margin-top: 0px;
+        }
+
+    </style>
+    <div class="header">
+        <h1 style="color: red; padding: 5px; width: 100%;">Sports News</h1><input onclick="displayMe()" type="submit" value="Click Me!">
+    </div>
+    <div id="newspanel">
+        <div class="container one">
+           <img src="profile.jpg" alt="A man's face">
+           <h3>Football news for footbal lovers</h3> 
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi repellat accusantium aperiam quod? Iste eligendi magni beatae. Repellendus dicta aut ad necessitatibus numquam optio impedit sapiente unde ut inventore.
+           </p>
+           <label>
+               Comment:
+               <br><textarea placeholder="Write here"></textarea><br>
+               <input type="submit" value="Post">
+           </label>
+    
+        </div>
+        <div class="container two">
+            <img src="profile.jpg" alt="A man's face">
+            <h3>Football news for footbal lovers</h3> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi repellat accusantium aperiam quod? Iste eligendi magni beatae. Repellendus dicta aut ad necessitatibus numquam optio impedit sapiente unde ut inventore.
+            </p>
+            <label>
+                Comment:
+                <br><textarea placeholder="Write here"></textarea><br>
+                <input type="submit" value="Post">
+            </label>
+        </div>
+        <div class="container three">
+            <img src="profile.jpg" alt="A man's face">
+            <h3>Football news for footbal lovers</h3> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi repellat accusantium aperiam quod? Iste eligendi magni beatae. Repellendus dicta aut ad necessitatibus numquam optio impedit sapiente unde ut inventore.
+            </p>
+            <label>
+                Comment:
+                <br><textarea placeholder="Write here"></textarea><br>
+                <input type="submit" value="Post">
+            </label>
+        </div>
+        <div class="container four">
+            <img src="profile.jpg" alt="A man's face">
+            <h3>Football news for footbal lovers</h3> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi repellat accusantium aperiam quod? Iste eligendi magni beatae. Repellendus dicta aut ad necessitatibus numquam optio impedit sapiente unde ut inventore.
+            </p>
+            <label>
+                Comment:
+                <br><textarea placeholder="Write here"></textarea><br>
+                <input type="submit" value="Post">
+            </label>
+        </div>
+        <div class="container five">
+            <img src="profile.jpg" alt="A man's face">
+            <h3>Football news for footbal lovers</h3> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi repellat accusantium aperiam quod? Iste eligendi magni beatae. Repellendus dicta aut ad necessitatibus numquam optio impedit sapiente unde ut inventore.
+            </p>
+            <label>
+                Comment:
+                <br><textarea placeholder="Write here"></textarea><br>
+                <input type="submit" value="Post">
+            </label>
+        </div>
+        <div class="container six">
+            <img src="profile.jpg" alt="A man's face">
+            <h3>Football news for footbal lovers</h3> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi repellat accusantium aperiam quod? Iste eligendi magni beatae. Repellendus dicta aut ad necessitatibus numquam optio impedit sapiente unde ut inventore.
+            </p>
+            <label>
+                Comment:
+                <br><textarea placeholder="Write here"></textarea><br>
+                <input type="submit" value="Post">
+            </label>
+        </div>
+    </div>
+    <script>
+        function displayMe() {
+            var lead = document.getElementById("newspanel");
+            lead.style.display = "block"
+        }
+    </script>
+</body>
+</html>
