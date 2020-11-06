@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="indexCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Document</title>
-    <!-- <script>
-        $(document).ready(function() {
-            
-        });
-    </script> -->
+
 </head>
 <body>
+    <!-- finish the Jquery animation for the footer -->
+    <script>
+        $(document).ready(function() {
+            $(".end").mouseover(function() {
+                $("#ad-box").animate({
+                    {
+                        width:100px;
+                        height:100px;
+                        background:red;
+                        transition:2s;
+                        -webkit-transition:2s;
+                        -moz-transition:2s;
+                        position:absolute;
+                        right:calc(100% - 100px);
+                    }
+                        .end:hover {
+                        right:0;
+                        }
+                })
+            });
+        });
+    </script>
     <header>
         <div class="head">
-            <h3 id="topic">Vanilla News Arena</h3>
-            <p id="footword">..your source of credible gist, oh sorry, news.</p>
+            <h3 id="topic" class="animate__animated animate__zoomInUp">Vanilla News Arena</h3>
+            <!-- add a an animation to this -->
+            <p id="footword" class="animate__animated animate__slideInLeft">..your source of credible gist, oh sorry, news.</p>
         </div>
     </header>
     <div class="box">
@@ -69,7 +89,8 @@
     
     <footer class="end">
         <h3>Advertise with us</h3>
-        <p id="ad-box">let's help the world see both you and your brand.</p>
+        <p id="ad-box" class="animate__animated animate__slideInLeft">let's help the world see both you and your brand.</p>
     </footer>
+    
 </body>
 </html>

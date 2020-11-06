@@ -55,7 +55,7 @@
 .main{
     width: 50%;
     text-align: center;
-    height: 70%;
+    height: 100%;
     margin-top: 10px;
 }
 
@@ -63,6 +63,7 @@
     text-transform: capitalize;
     color: red;
     font-size: 25px;
+    margin-top: 0px;
 }
 
 .main h3:hover{
